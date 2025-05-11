@@ -1,3 +1,19 @@
+:root {
+    /* cores */
+    --azul-claro: #eff8ff;
+    --azul-bebe: #d4ebff;
+    --cor-principal: #73020C;
+    --cor-secundaria: #400106;
+    --: #BF0413;
+    --: #BF0436;
+    --: #58748C;
+
+    /* espaços */
+    --small-space: 5px;
+    --medium-space: 10px;
+    --big-space: 25px
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +21,15 @@
 }
 
 main {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100vh;
-    background-color: rgb(233, 245, 255);
 }
 
+/* Color Theme Swatches in Hex */
+ 
+ 
+ 
+ 
+ 
