@@ -1,23 +1,36 @@
 :root {
     /* cores */
-    --azul-claro: #eff8ff;
-    --azul-bebe: #d4ebff;
-    --cor-principal: #73020C;
-    --cor-secundaria: #400106;
-    --: #BF0413;
-    --: #BF0436;
-    --: #58748C;
+    --cor-principal: #3D314A;
+    --cor-secundaria: #1A1423;
+    --cor-media: #201630;
+    --cor-media-2: #dbd9db;
+    --cor-clara: #E5EBEA;
 
     /* espaços */
     --small-space: 5px;
     --medium-space: 10px;
-    --big-space: 25px
+    --big-space: 25px;
+    --vast-space: 40px;
+
+    /*fonte*/
+    --fonte-principal: "Quicksand", sans-serif;
+    
+    /* fonte tamanho */
+    --fonte-pequena: .7em; 
+    --fonte-media: 1em;
+    --fonte-grande: 1.5em;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: var(--fonte-principal);
+    color: var(--cor-media-2);
+    font-size: var(--fonte-media);
 }
 
 main {
@@ -27,7 +40,6 @@ main {
     height: 100vh;
 }
 
-/* Color Theme Swatches in Hex */
  
  
  

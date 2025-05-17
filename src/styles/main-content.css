@@ -1,11 +1,9 @@
-
-/* #eff8ff azul baby*/
 .content {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 100%;
-    background-color: var(--azul-claro);
+    background-color: var(--cor-principal);
 }
 
 .content__icons-bar{
@@ -13,6 +11,7 @@
     justify-content: space-between;
     width: 100%;
     height: 10vh;
+    padding: var(--medium-space);
 }
 
 .content__container-name-gpt {
@@ -22,8 +21,19 @@
     align-items: center;
     width: fit-content;
     height: 100%;
-    border: solid red;
+    border: solid var(--cor-media);
+    border-radius: var(--medium-space);
     gap: var(--small-space);
+    padding: var(--small-space);
+    transition: 0.3s;
+}
+
+.content__container-name-gpt:hover, 
+.content__container-temporary:hover {
+    color: var(--cor-clara);
+    background-color: var(--cor-principal);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .content__container-name-gpt > h2 {
@@ -38,7 +48,9 @@
     align-items: center;
     width: fit-content;
     height: 100%;
-    border: solid blue;
+    border: solid var(--cor-media);
+    border-radius: var(--medium-space);
+    padding: var(--small-space);
 }
 
 .content__container-temporary > h2 {
@@ -46,7 +58,58 @@
     padding: var(--small-space);
 }
 
-.content_main {
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 90vh;
+}
+
+.input__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    font-size: var(--big-space);
+}
+
+.input__container {
+    width: 50%;
+    height: 125px;
+    border: solid var(--cor-media);
+    border-radius: var(--big-space);
+    background-color: var(--cor-secundaria);
+}
+
+.input__txt {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+
+.input__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: var(--small-space);
+}
+
+.fa-plus,
+.fa-question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 90%;
+    border: solid var(--cor-clara);
+    border-radius: var(--big-space);
 }
